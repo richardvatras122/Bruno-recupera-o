@@ -1,0 +1,116 @@
+
+
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" type="text/css" href="estilo.css">
+  <title>Pagamento</title>
+</head>
+<body>
+
+
+
+<div class="container">
+	
+  <h1>Pagamento</h1>
+	<img src="imagens/play.png" class="tenis">
+ 
+  <div class="card-container">
+
+
+	<p class="pagamento">
+		Valor total: R$ R$ 4.749,90
+	</p>
+	<p class="pagamento">
+		(ate 12 vezes sem juro)
+	</p>
+  	
+  	<form method="post" action="validation.php" class="card-form">
+  		<h3 class="info">INFORME SEUS DADOS DO CARTAO:</h3>
+  		<div class="inputbox">
+  		  <span>TIPO DE CARTAO</span><br>
+  		  <select class="card-type">
+				<option value="default">MASTERCARD</option>
+				<option value="default">VISA</option>
+				<option value="default">ELO</option>
+  		  </select>
+  		</div>
+  	  <div class="inputbox">
+  	  	<span>NUMERO DO CARTAO</span><br>
+  	  	<input type="text" maxlength="18">
+  	  </div>
+  	  <div class="inputbox">
+  	  	<span>MES DE EXPIRAÇAO</span>
+  	  	<select class="month-input">
+  	  	  <option value="month" selected disabled>MES</option>
+  	  	  <option value="01">01</option>
+  	  	  <option value="02">02</option>
+  	  	  <option value="03">03</option>
+  	  	  <option value="04">04</option>
+  	  	  <option value="05">05</option>
+  	  	  <option value="06">06</option>
+  	  	  <option value="07">07</option>
+  	  	  <option value="08">08</option>
+  	  	  <option value="09">09</option>
+  	  	  <option value="10">10</option>
+  	  	  <option value="11">11</option>
+  	  	  <option value="12">12</option>
+  	  	</select>
+  	  </div>
+  	  <div class="inputbox">
+  	  	<span>ANO DE EXPIRAÇAO</span>
+  	  	<select class="year-input">
+  	  	  <option value="year" selected disabled>ANO</option>
+  	  	  <option value="2022">2022</option>
+  	  	  <option value="2023">2023</option>
+  	  	  <option value="2024">2024</option>
+  	  	  <option value="2025">2025</option>
+  	  	  <option value="2026">2026</option>
+  	  	  <option value="2027">2027</option>
+  	  	  <option value="2028">2028</option>
+  	  	  <option value="2029">2029</option>
+  	  	  <option value="2030">2030</option>
+  	  	  <option value="2031">2031</option>
+  	  	  <option value="2032">2032</option>
+  	  	  <option value="2033">2033</option>
+  	  	</select>
+  	  </div>
+  	  <div class="inputbox">
+  	  	<span>CVC</span>
+  	  	<input type="text" maxlength="4" class="cvc-post">
+  	  </div>
+
+  	  <h3 class="info">INFORMAÇAO PESSOAL:</h3>
+
+  	  <div class="inputbox">
+  	  	<span>NOME</span>
+  	  	<input type="text" class="name-post"><br>
+
+  	  	<span>SOBRENOME</span>
+  	  	<input type="text" class="surname-post"><br>
+  	  </div>
+  	  <div class="inputbox">
+  	  	<span>CITY</span>
+  	  	<input type="text" name="city-post">
+  	  </div>
+  	  <div class="inputbox">
+  	  	<span>CEP</span>
+  	  	<input type="text" maxlength="5" class="zip-post">
+  	  </div>
+  	  <div class="inputbox">
+  	  	<span>TELEFONE</span>
+  	  	<input type="text" class="phone-post"><br>
+  	  </div>
+
+  	  <img src="imagens/mastercard.png" class="valid-card">
+		<input type="submit" class="button-btn" value="Pagar">
+		<input type="submit" class="button-btn" value="Carrinho">
+  	</form>
+  </div>
+
+</div>
+
+</body>
+</html>
